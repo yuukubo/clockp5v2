@@ -44,7 +44,7 @@ function set_clock(clock_X, clock_Y, now, clock_font_size) {
 }
 
 function set_game_title(canvas_W, canvas_H) {
-  let game_title = "* clockp5v2 * c1.0"
+  let game_title = "* clockp5v2 * c2.0"
   push();
   textSize(10);
   textFont("Comic Sans MS");
