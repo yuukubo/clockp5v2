@@ -11,6 +11,11 @@ function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
 }
 
+function mousePressed() {
+  fs = fullscreen() ;
+  fullscreen(!fs);
+}
+
 function draw() {
   let [canvas_W, canvas_H] = [windowWidth, windowHeight];
   let clock_X = canvas_W / 2;
