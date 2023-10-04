@@ -39,12 +39,12 @@ function set_clock(clock_X, clock_Y, now, clock_font_size) {
   text(nf(now.getHours(), 2) + " : " + nf(now.getMinutes(), 2) + " : " + nf(now.getSeconds(), 2), clock_X, clock_Y);
 
   textSize(clock_font_size / 2);
-  text(nf(now.getFullYear(), 4) + "/" + nf(now.getMonth(), 2) + "/" + nf(now.getDate(), 2) + " " + dow[now.getDay()], clock_X, clock_Y * 7 / 10);
+  text(nf(now.getFullYear(), 4) + "/" + nf(now.getMonth() + 1, 2) + "/" + nf(now.getDate(), 2) + " " + dow[now.getDay()], clock_X, clock_Y * 7 / 10);
   pop();
 }
 
 function set_game_title(canvas_W, canvas_H) {
-  let game_title = "* clockp5v2 * c2.0"
+  let game_title = "* clockp5v2 * c3.0"
   push();
   textSize(10);
   textFont("Comic Sans MS");
